@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: 7771946821:AAETvMQPu_n8FY8eOzIQcKuQoFHWAa5l068
+      - key: CHANNEL_ID
+        value: "@CP_crot"
